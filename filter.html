@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OH! Điện máy</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/image/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <!-- header-top -->
+            <div class="header-top">
+                <a href="./index.html">
+                    <img src="./assets/image/logo.png" alt="OH" class="logo">
+                </a>
+                <div class="header-t__nav row">
+                    <a href="#">
+                        <div class="header-t__button row" id="header-t__system">
+                            <nav>
+                                <h4>Hệ thống cửa hàng</h4>
+                                <span>40 cửa hàng</span>
+                            </nav>
+                            <i class='bx bxs-down-arrow'></i>
+                        </div>
+                    </a>
+                    <form action="" method="post">
+                        <div class="search-nav">
+                            <input type="text" name="search" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+                            <button type="submit" name="search-submit" class="search-button">
+                                <i class='bx bx-search'></i>
+                            </button>
+                        </div>
+                    </form>
+                    <a href="#">
+                        <div class="header-t__button row">
+                            <h4>Lịch sử đơn hàng</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="header-action row">
+                    <a href="tel:19006750">
+                        <div class="header-ac__item row">
+                            <img
+                                src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/phone.svg?1697770786196">
+                            <nav>
+                                <h3>Hotline</h3>
+                                <span>19006750</span>
+                            </nav>
+                        </div>
+                    </a>
+                    <div class="header-ac__item row">
+                        <img src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/user.svg?1697770786196">
+                        <nav>
+                            <h3>Tài khoản</h3>
+                            <span>OH, hello</span>
+                        </nav>
+                        <!-- md-action -->
+                        <div class="md-action">
+                            <a href="#" class="md-action__item">Đăng kí</a>
+                            <a href="#" class="md-action__item">Đăng nhập</a>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="header-ac__item row">
+                            <img
+                                src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/cart.svg?1697770786196">
+                            <div class="cart-number">10</div>
+                            <nav>
+                                <h3>Giỏ hàng</h3>
+                                <span>Thanh toán</span>
+                            </nav>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- header-below -->
+            <div class="header-below row">
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_1.png?1693994595865">
+                        <span>Tivi</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_2.png?1693994595865">
+                        <span>Tủ lạnh</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_3.png?1693994595865">
+                        <span>Máy lạnh</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_4.png?1693994595865">
+                        <span>Máy giặt</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_5.png?1693994595865">
+                        <span>Gia dụng</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_6.png?1693994595865">
+                        <span>Loa</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_7.png?1693994595865">
+                        <span>Tủ đông</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_8.png?1693994595865">
+                        <span>Máy lọc khí</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_9.png?1693994595865">
+                        <span>Văn Phòng</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end -->
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <div class="container">
+            <div class="filter-wrap">
+                <!-- filter search -->
+                <div class="filter-search">
+                    <div class="filter-se__title">
+                        <i class='bx bx-filter-alt'></i>
+                        BỘ LỌC TÌM KIẾM
+                    </div>
+                    <div class="filter-se__list">
+                        <div class="filter-se__item">
+                            <div class="filter-se__drop">
+                                <span>Theo danh mục</span>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <nav>
+                                <div class="filter-se__box"><input data-category="1" class="filter-check"
+                                        type="checkbox"><span>Tivi</span></div>
+                                <div class="filter-se__box"><input data-category="2" class="filter-check"
+                                        type="checkbox"><span>Tủ lạnh</span></div>
+                                <div class="filter-se__box"><input data-category="3" class="filter-check"
+                                        type="checkbox"><span>Máy lạnh</span></div>
+                                <div class="filter-se__box"><input data-category="4" class="filter-check"
+                                        type="checkbox"><span>Máy giặt</span></div>
+                                <div class="filter-se__box"><input data-category="5" class="filter-check"
+                                        type="checkbox"><span>Gia dụng</span></div>
+                                <div class="filter-se__box"><input data-category="6" class="filter-check"
+                                        type="checkbox"><span>Loa</span></div>
+                                <div class="filter-se__box"><input data-category="7" class="filter-check"
+                                        type="checkbox"><span>Tủ đông</span></div>
+                                <div class="filter-se__box"><input data-category="8" class="filter-check"
+                                        type="checkbox"><span>Máy lọc khí</span></div>
+                                <div class="filter-se__box"><input data-category="9" class="filter-check"
+                                        type="checkbox"><span>Văn phòng</span></div>
+                            </nav>
+                        </div>
+                        <div class="filter-se__item">
+                            <div class="filter-se__drop">
+                                <span>Theo mức giá</span>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <nav>
+                                <div class="filter-se__box"><input data-price="1" class="filter-check"
+                                        type="checkbox"><span>Dưới 2 triệu</span></div>
+                                <div class="filter-se__box"><input data-price="2" class="filter-check"
+                                        type="checkbox"><span>Từ 2 - 5 triệu</span></div>
+                                <div class="filter-se__box"><input data-price="3" class="filter-check"
+                                        type="checkbox"><span>Từ 5 - 10 triệu</span></div>
+                                <div class="filter-se__box"><input data-price="4" class="filter-check"
+                                        type="checkbox"><span>Từ 10 - 15 triệu</span></div>
+                                <div class="filter-se__box"><input data-price="5" class="filter-check"
+                                        type="checkbox"><span>Từ 10 - 20 triệu</span></div>
+                                <div class="filter-se__box"><input data-price="6" class="filter-check"
+                                        type="checkbox"><span>Trên 20 triệu</span></div>
+                            </nav>
+                        </div>
+                        <div class="filter-se__item">
+                            <div class="filter-se__drop">
+                                <span>Theo thương hiệu</span>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <nav>
+                                <div class="filter-se__box"><input data-trademark="1" class="filter-check"
+                                        type="checkbox"><span>Samsung</span></div>
+                                <div class="filter-se__box"><input data-trademark="2" class="filter-check"
+                                        type="checkbox"><span>Sony</span></div>
+                                <div class="filter-se__box"><input data-trademark="3" class="filter-check"
+                                        type="checkbox"><span>LG</span></div>
+                                <div class="filter-se__box"><input data-trademark="4" class="filter-check"
+                                        type="checkbox"><span>TCL</span></div>
+                                <div class="filter-se__box"><input data-trademark="5" class="filter-check"
+                                        type="checkbox"><span>Casper</span></div>
+                                <div class="filter-se__box"><input data-trademark="6" class="filter-check"
+                                        type="checkbox"><span>Tosiba</span></div>
+                                <div class="filter-se__box"><input data-trademark="7" class="filter-check"
+                                        type="checkbox"><span>Sharp</span></div>
+                                <div class="filter-se__box"><input data-trademark="8" class="filter-check"
+                                        type="checkbox"><span>Aqua</span></div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- filter list -->
+                <div class="filter-nav">
+                    <div class="filter-header">
+                        <p>Sắp xếp theo:</p>
+                        <button type="button" id="filter-new" class="filter-hd__button filter-hd__active">Mới
+                            nhất</button>
+                        <button type="button" id="filter-old" class="filter-hd__button">Cũ nhất</button>
+                        <button type="button" id="filter-short" class="filter-hd__button">Giá: Thấp - cao</button>
+                        <button type="button" id="filter-high" class="filter-hd__button">Giá: Cao - thấp</button>
+                    </div>
+                    <div class="filter-list">
+                        <!-- dữ liệu data.json -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-tp__item">
+                <h3>Hỗ trợ khách hàng</h3>
+                <a href="#">Thẻ ưu đãi</a>
+                <a href="#">Trung tâm bảo hành</a>
+                <a href="#">Thanh toán và giao hàng</a>
+                <a href="#">Dịch vụ sửa chữa và bảo trì</a>
+                <a href="#">Doanh nghiệp thân thiết</a>
+            </div>
+            <div class="footer-tp__item">
+                <h3>Chính sách mua hàng</h3>
+                <a href="#">Quy định chung</a>
+                <a href="#">Chính sách Bảo mật Thông tin</a>
+                <a href="#">Chính sách Vận chuyển và Lắp đặt</a>
+                <a href="#">Chính sách bảo hành</a>
+                <a href="#">Chính sách đổi trả và hoàn tiền</a>
+            </div>
+            <div class="footer-tp__item">
+                <h3>Thông tin cửa hàng</h3>
+                <a href="#">Giới thiệu OH!Điện máy</a>
+                <a href="#">Thông tin liên hệ</a>
+                <a href="#">Hệ thống Showroom</a>
+                <a href="#">Hỏi đáp</a>
+                <a href="#">Tin công nghệ</a>
+            </div>
+            <div class="footer-tp__item">
+                <h3>Hỗ trợ khách hàng</h3>
+                <div class="footer-tp__vid">
+                    <p>Hỗ trợ Khách hàng</p>
+                    <a href="#">cskh@ohcompany.vn</a>
+                </div>
+                <div class="footer-tp__vid">
+                    <p>Liên hệ báo giá</p>
+                    <a href="#">baogia@ohcompany.vn</a>
+                </div>
+                <div class="footer-tp__vid">
+                    <p>Hợp tác phát triển</p>
+                    <a href="#">hoptac@ohcompany.vn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-below">
+            <div class="footer-bl__item">
+                <h3>CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ OH!Company</h3>
+                <p>Giấy chứng nhận ĐKDN số 0123456789 do Sở kế hoạch và đầu tư thành phố Hà Nội cấp ngày 22 tháng 06 năm
+                    2020.</p>
+                <p>© Bản quyền thuộc về OH!Team. Cung cấp bởi hung93171@donga.edu.vn</p>
+            </div>
+            <div class="footer-bl__item">
+                <h4>Địa chỉ trụ sở chính:</h4>
+                <p>Tầng 5, Số 117-119-121 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh</p>
+                <h4>Văn phòng điều hành miền Bắc:</h4>
+                <p>Tầng 6, Số 1 Phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội</p>
+                <h4>Văn phòng điều hành miền Nam:</h4>
+                <p>Tầng 11 Minh Long Tower, số 17 Bà Huyện Thanh Quan, Phường Võ Thị Sáu, Quận 3, TP. Hồ Chí Minh</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end -->
+
+    <!-- back to top -->
+    <div class="back-to-top" id="back-to-top">
+        <i class='bx bxs-chevron-up'></i>
+    </div>
+    <!-- end -->
+
+    <!-- js -->
+    <script>
+        // *** Javascript quay lại đầu trang
+        var backToTopButton = document.getElementById("back-to-top");
+
+        // Thêm lắng nghe sự kiện cuộn trang
+        window.addEventListener("scroll", function () {
+            // Kiểm tra vị trí cuộn trang
+            if (document.documentElement.scrollTop > 500) {
+                // Hiển thị phần tử quay trở lại đầu trang
+                backToTopButton.style.display = "block";
+            } else {
+                // Ẩn phần tử quay trở lại đầu trang
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        // Thêm lắng nghe sự kiện click cho phần tử quay trở lại đầu trang
+        backToTopButton.addEventListener("click", function () {
+            // Cuộn trang về đầu
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Cuộn mượt
+            });
+        });
+        // *** END Javascript quay lại đầu trang
+
+
+        // Lấy danh sách tất cả các phần tử .filter-se__drop
+        var dropButtons = document.querySelectorAll(".filter-se__drop");
+
+        // Lắng nghe sự kiện click trên mỗi nút .filter-se__drop
+        dropButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                // Tìm phần tử nav liền kề (sibling) của .filter-se__drop
+                var nav = button.nextElementSibling;
+
+                // Kiểm tra xem nav đã có class .drop hay chưa
+                if (nav.classList.contains("drop")) {
+                    // Nếu đã có, loại bỏ class .drop
+                    nav.classList.remove("drop");
+                } else {
+                    // Nếu chưa có, thêm class .drop
+                    nav.classList.toggle("drop");
+                }
+            });
+        });
+
+
+
+    </script>
+    <script>
+        // Đường dẫn tới tệp JSON
+        const jsonFilePath = 'data.json';
+
+        // Lựa chọn các phần tử trong DOM
+        const productList = document.querySelector('.filter-list');
+        const filterCheckboxes = document.querySelectorAll('.filter-check');
+        const filterButtons = document.querySelectorAll('.filter-hd__button');
+
+        let productsData = []; // Mảng chứa dữ liệu sản phẩm
+
+        // Hàm để hiển thị sản phẩm
+        function displayProducts(products) {
+            productList.innerHTML = ''; // Xóa nội dung hiện tại
+
+            products.forEach((product) => {
+                const productItem = document.createElement('div');
+                productItem.classList.add('filter-item');
+
+                productItem.innerHTML = `
+                    <a href="#">
+                        <div class="sale-img">
+                            <img src="./assets/image/${product.image_product[0].image_1}">
+                            <div class="promotion">${product.reduce}</div>
+                        </div>
+                        <h3 class="sale-name current">${product.name_product}</h3>
+                    </a>
+                    <div class="sale-group row">
+                        <p class="sale-pn">${product.price_new}<sup>đ</sup></p>
+                        <p class="sale-po">${product.price_old}<sup>đ</sup></p>
+                `;
+                productList.appendChild(productItem);
+            });
+        }
+
+        // Xử lý sự kiện khi click vào checkbox lọc
+        filterCheckboxes.forEach((checkbox) => {
+            checkbox.addEventListener('change', () => {
+                filterProducts(); // Gọi hàm để lọc sản phẩm khi có thay đổi
+            });
+        });
+
+        // Xử lý sự kiện khi click vào các nút sắp xếp
+        filterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach((btn) => btn.classList.remove('filter-hd__active'));
+                button.classList.add('filter-hd__active');
+                sortProducts(button.id); // Gọi hàm để sắp xếp sản phẩm khi click vào nút sắp xếp
+            });
+        });
+
+        // Hàm để lọc sản phẩm dựa trên checkbox được chọn
+        function filterProducts() {
+            const selectedCategories = Array.from(filterCheckboxes)
+                .filter((checkbox) => checkbox.checked)
+                .map((checkbox) => checkbox.getAttribute('data-category'));
+
+            const selectedPrices = Array.from(filterCheckboxes)
+                .filter((checkbox) => checkbox.checked)
+                .map((checkbox) => checkbox.getAttribute('data-price'));
+
+            const selectedTrademarks = Array.from(filterCheckboxes)
+                .filter((checkbox) => checkbox.checked)
+                .map((checkbox) => checkbox.getAttribute('data-trademark'));
+
+            // Lọc sản phẩm theo các tiêu chí
+            const filteredProducts = productsData.filter((product) => {
+                const isCategoryMatch = selectedCategories.length === 0 || selectedCategories.includes(product['data-category']);
+                const isPriceMatch = selectedPrices.length === 0 || selectedPrices.includes(product['data-price']);
+                const isTrademarkMatch = selectedTrademarks.length === 0 || selectedTrademarks.includes(product['data-trademark']);
+                return isCategoryMatch && isPriceMatch && isTrademarkMatch;
+            });
+
+            displayProducts(filteredProducts);
+        }
+
+        // Hàm để sắp xếp sản phẩm
+        function sortProducts(sortType) {
+            const sortedProducts = [...productsData];
+
+            if (sortType === 'filter-new') {
+                sortedProducts.sort((a, b) => new Date(b.date) - new Date(a.date));
+            } else if (sortType === 'filter-old') {
+                sortedProducts.sort((a, b) => new Date(a.date) - new Date(b.date));
+            } else if (sortType === 'filter-short') {
+                sortedProducts.sort((a, b) => a.price_new - b.price_new);
+            } else if (sortType === 'filter-high') {
+                sortedProducts.sort((a, b) => b.price_new - a.price_new);
+            }
+
+            displayProducts(sortedProducts);
+        }
+
+        // Sử dụng Fetch API để lấy dữ liệu từ tệp JSON
+        fetch(jsonFilePath)
+            .then((response) => response.json())
+            .then((data) => {
+                productsData = data;
+                displayProducts(productsData); // Hiển thị tất cả sản phẩm ban đầu
+            })
+            .catch((error) => {
+                console.error('Lỗi khi tải dữ liệu JSON: ' + error);
+            });
+
+    </script>
+</body>
+
+</html>

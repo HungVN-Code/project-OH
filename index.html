@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OH! Điện máy</title>
+
+    <!-- link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/image/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <!-- header-top -->
+            <div class="header-top">
+                <a href="./index.html">
+                    <img src="./assets/image/logo.png" alt="OH" class="logo">
+                </a>
+                <div class="header-t__nav row">
+                    <a href="#">
+                        <div class="header-t__button row" id="header-t__system">
+                            <nav>
+                                <h4>Hệ thống cửa hàng</h4>
+                                <span>40 cửa hàng</span>
+                            </nav>
+                            <i class='bx bxs-down-arrow'></i>
+                        </div>
+                    </a>
+                    <form action="" method="post">
+                        <div class="search-nav">
+                            <input type="text" name="search" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+                            <button type="submit" name="search-submit" class="search-button">
+                                <i class='bx bx-search'></i>
+                            </button>
+                        </div>
+                    </form>
+                    <a href="#">
+                        <div class="header-t__button row">
+                            <h4>Lịch sử đơn hàng</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="header-action row">
+                    <a href="tel:19006750">
+                        <div class="header-ac__item row">
+                            <img
+                                src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/phone.svg?1697770786196">
+                            <nav>
+                                <h3>Hotline</h3>
+                                <span>19006750</span>
+                            </nav>
+                        </div>
+                    </a>
+                    <div class="header-ac__item row">
+                        <img src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/user.svg?1697770786196">
+                        <nav>
+                            <h3>Tài khoản</h3>
+                            <span>OH, hello</span>
+                        </nav>
+                        <!-- md-action -->
+                        <div class="md-action">
+                            <a href="#" class="md-action__item">Đăng kí</a>
+                            <a href="#" class="md-action__item">Đăng nhập</a>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="header-ac__item row">
+                            <img
+                                src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/cart.svg?1697770786196">
+                            <div class="cart-number">10</div>
+                            <nav>
+                                <h3>Giỏ hàng</h3>
+                                <span>Thanh toán</span>
+                            </nav>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- header-below -->
+            <div class="header-below row">
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_1.png?1693994595865">
+                        <span>Tivi</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_2.png?1693994595865">
+                        <span>Tủ lạnh</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_3.png?1693994595865">
+                        <span>Máy lạnh</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_4.png?1693994595865">
+                        <span>Máy giặt</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_5.png?1693994595865">
+                        <span>Gia dụng</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_6.png?1693994595865">
+                        <span>Loa</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_7.png?1693994595865">
+                        <span>Tủ đông</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_8.png?1693994595865">
+                        <span>Máy lọc khí</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="header-be__item row">
+                        <img
+                            src="https://bizweb.dktcdn.net/100/480/314/themes/899828/assets/menu_ico_9.png?1693994595865">
+                        <span>Văn Phòng</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- end -->
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <div class="container">
+            <!-- hero -->
+            <section class="hero">
+                <!-- hero-slider -->
+                <div class="swiper hero-sl">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hero-sl__item">
+                            <a href="#">
+                                <img src="./assets/image/slider_1.png">
+                            </a>
+                        </div>
+                        <div class="swiper-slide hero-sl__item">
+                            <a href="#">
+                                <img src="./assets/image/slider_1.png">
+                            </a>
+                        </div>
+                        <div class="swiper-slide hero-sl__item">
+                            <a href="#">
+                                <img src="./assets/image/slider_1.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- discount code -->
+                <div class="discount">
+                    <div class="discount-item">
+                        <h2>Nhập mã: <span id="discount-code">OH50</span></h2>
+                        <p>Giảm 50% cho đơn hàng giá trị tối thiểu 500.000. Mã giảm tối đa 200K</p>
+                        <div class="discount-item__ac row">
+                            <button type="button" class="copy-code" id="copy-code">Sao chép</button>
+                            <h4 class="condition" data-id="1">Điều kiện</h4>
+                        </div>
+                    </div>
+                    <div class="discount-item">
+                        <h2>Nhập mã: <span id="discount-code">OH60</span></h2>
+                        <p>Giảm 60% cho đơn hàng giá trị tối thiểu 1000.000. Mã giảm tối đa 250K</p>
+                        <div class="discount-item__ac row">
+                            <button type="button" class="copy-code" id="copy-code">Sao chép</button>
+                            <h4 class="condition" data-id="2">Điều kiện</h4>
+                        </div>
+                    </div>
+                    <div class="discount-item">
+                        <h2>Nhập mã: <span id="discount-code">OH70</span></h2>
+                        <p>Giảm 70% cho đơn hàng giá trị tối thiểu 1500.000. Mã giảm tối đa 300K</p>
+                        <div class="discount-item__ac row">
+                            <button type="button" class="copy-code" id="copy-code">Sao chép</button>
+                            <h4 class="condition" data-id="3">Điều kiện</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- sale -->
+            <section class="sale">
+                <div class="sale-header">
+                    <img src="./assets/image/flash_sale.png">
+                    <div class="sale-counter row">
+                        <div class="counter hour">03</div>
+                        <span>:</span>
+                        <div class="counter minute">00</div>
+                        <span>:</span>
+                        <div class="counter second">00</div>
+                    </div>
+                </div>
+                <div class="sale-list">
+                    <!-- dữ liệu từ file data.json -->
+                </div>
+            </section>
+
+            <!-- banner -->
+            <section class="banner">
+                <div class="banner-left">
+                    <a href="#">
+                        <img src="./assets/image/banner_1.png">
+                    </a>
+                </div>
+                <div class="banner-right">
+                    <div class="banner-box">
+                        <div class="banner-img">
+                            <a href="#">
+                                <img src="./assets/image/banner_2.png">
+                            </a>
+                        </div>
+                        <div class="banner-img">
+                            <a href="#">
+                                <img src="./assets/image/banner_3.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-vid">
+                        <div class="banner-img">
+                            <a href="#">
+                                <img src="./assets/image/banner_4.png">
+                            </a>
+                        </div>
+                        <div class="banner-img">
+                            <a href="#">
+                                <img src="./assets/image/banner_5.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- product -->
+            <section class="product">
+                <div class="sale-header">
+                    <h2 class="title-header">OH! - Hôm nay có gì?</h2>
+                    <a class="title-link" href="#">Xem tất cả</a>
+                </div>
+                <div class="product-list">
+                    <!-- dữ liệu từ file data.json -->
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- md-condition -->
+    <div class="md-condition" id="md-condition">
+        <div class="condition-wrap" id="condition-wrap">
+            <!-- dữ liệu được in ra -->
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- footer -->
+    <footer>
+        <!-- footer-top -->
+        <div class="footer-top">
+            <div class="footer-tp__item">
+                <h3>Hỗ trợ khách hàng</h3>
+                <a href="#">Thẻ ưu đãi</a>
+                <a href="#">Trung tâm bảo hành</a>
+                <a href="#">Thanh toán và giao hàng</a>
+                <a href="#">Dịch vụ sửa chữa và bảo trì</a>
+                <a href="#">Doanh nghiệp thân thiết</a>
+            </div>
+            <div class="footer-tp__item">
+                <h3>Chính sách mua hàng</h3>
+                <a href="#">Quy định chung</a>
+                <a href="#">Chính sách Bảo mật Thông tin</a>
+                <a href="#">Chính sách Vận chuyển và Lắp đặt</a>
+                <a href="#">Chính sách bảo hành</a>
+                <a href="#">Chính sách đổi trả và hoàn tiền</a>
+            </div>
+            <div class="footer-tp__item">
+                <h3>Thông tin cửa hàng</h3>
+                <a href="#">Giới thiệu OH!Điện máy</a>
+                <a href="#">Thông tin liên hệ</a>
+                <a href="#">Hệ thống Showroom</a>
+                <a href="#">Hỏi đáp</a>
+                <a href="#">Tin công nghệ</a>
+            </div>
+            <div class="footer-tp__item">
+                <h3>Hỗ trợ khách hàng</h3>
+                <div class="footer-tp__vid">
+                    <p>Hỗ trợ Khách hàng</p>
+                    <a href="#">cskh@ohcompany.vn</a>
+                </div>
+                <div class="footer-tp__vid">
+                    <p>Liên hệ báo giá</p>
+                    <a href="#">baogia@ohcompany.vn</a>
+                </div>
+                <div class="footer-tp__vid">
+                    <p>Hợp tác phát triển</p>
+                    <a href="#">hoptac@ohcompany.vn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer-below -->
+        <div class="footer-below">
+            <div class="footer-bl__item">
+                <h3>CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ OH!Company</h3>
+                <p>Giấy chứng nhận ĐKDN số 0123456789 do Sở kế hoạch và đầu tư thành phố Hà Nội cấp ngày 22 tháng 06 năm 2020.</p>
+                <p>© Bản quyền thuộc về OH!Team. Cung cấp bởi hung93171@donga.edu.vn</p>
+            </div>
+            <div class="footer-bl__item">
+                <h4>Địa chỉ trụ sở chính:</h4>
+                <p>Tầng 5, Số 117-119-121 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh</p>
+                <h4>Văn phòng điều hành miền Bắc:</h4>
+                <p>Tầng 6, Số 1 Phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội</p>
+                <h4>Văn phòng điều hành miền Nam:</h4>
+                <p>Tầng 11 Minh Long Tower, số 17 Bà Huyện Thanh Quan, Phường Võ Thị Sáu, Quận 3, TP. Hồ Chí Minh</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end -->
+
+    <!-- back to top -->
+    <div class="back-to-top" id="back-to-top">
+        <i class='bx bxs-chevron-up'></i>
+    </div>
+    <!-- end -->
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".hero-sl", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            keyboard: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        // *** Javacript mã giảm giá
+        const copyButtons = document.querySelectorAll('.copy-code');
+
+        // Duyệt qua từng nút #copy-code và gắn sự kiện click
+        copyButtons.forEach(copyButton => {
+            copyButton.addEventListener('click', () => {
+                // Tìm phần tử .discount-item chứa nút #copy-code đã được click
+                const discountItem = copyButton.closest('.discount-item');
+
+                if (discountItem) {
+                    // Tìm nội dung của #discount-code trong .discount-item tương ứng
+                    const discountCode = discountItem.querySelector('#discount-code');
+
+                    if (discountCode) {
+                        // Tạo một textarea ẩn để copy nội dung
+                        const textarea = document.createElement('textarea');
+                        textarea.value = discountCode.textContent;
+
+                        // Thêm textarea vào body và sao chép nội dung
+                        document.body.appendChild(textarea);
+                        textarea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textarea);
+
+                        // Đổi văn bản và nền của nút #copy-code
+                        copyButton.textContent = 'Đã sao chép';
+                        copyButton.style.backgroundColor = '#E67A78';
+                        copyButton.style.cursor = 'no-drop';
+
+                        // Sau 5 giây, đặt lại văn bản và nền
+                        setTimeout(() => {
+                            copyButton.textContent = 'Sao chép';
+                            copyButton.style.backgroundColor = 'var(--main-color)';
+                            copyButton.style.cursor = 'pointer';
+                        }, 5000);
+                    }
+                }
+            });
+        });
+
+        // dữ liệu: điều kiện giảm giá
+        let conditionData = [
+            {
+                id: 1,
+                code: 'OH50',
+                expiry: '16 Th08 2023 12:00 - 17 Th11 2023 23:59',
+                endow: 'Lượt sử dụng có hạn. Nhanh tay kẻo lỡ bạn nhé! Giảm 200k - Đơn tối thiểu 500.000đ',
+                apply: 'Những sản phẩm bị hạn chế chạy khuyến mại theo quy định của Nhà nước sẽ không được hiển thị nếu nằm trong danh sách sản phẩm đã chọn.',
+                pay: 'Tất cả các hình thức thanh toán',
+                shipping: 'Tất cả các đơn vị vận chuyển'
+            },
+            {
+                id: 2,
+                code: 'OH60',
+                expiry: '16 Th08 2023 12:00 - 17 Th11 2023 23:59',
+                endow: 'Lượt sử dụng có hạn. Nhanh tay kẻo lỡ bạn nhé! Giảm 250k - Đơn tối thiểu 1000.000đ',
+                apply: 'Những sản phẩm bị hạn chế chạy khuyến mại theo quy định của Nhà nước sẽ không được hiển thị nếu nằm trong danh sách sản phẩm đã chọn.',
+                pay: 'Tất cả các hình thức thanh toán',
+                shipping: 'J&T Express, Giao hàng nhanh'
+            },
+            {
+                id: 3,
+                code: 'OH70',
+                expiry: '16 Th08 2023 12:00 - 17 Th11 2023 23:59',
+                endow: 'Lượt sử dụng có hạn. Nhanh tay kẻo lỡ bạn nhé! Giảm 300k - Đơn tối thiểu 1500.000đ',
+                apply: 'Những sản phẩm bị hạn chế chạy khuyến mại theo quy định của Nhà nước sẽ không được hiển thị nếu nằm trong danh sách sản phẩm đã chọn.',
+                pay: 'Tất cả các hình thức thanh toán',
+                shipping: 'Giao hàng nhanh, Vietnam Post'
+            },
+        ];
+
+        let conditions = document.querySelectorAll('.condition');
+        let modalCondition = document.querySelector('#md-condition');
+
+        // hiển thị .md-condition
+        conditions.forEach((condition) => {
+            condition.onclick = () => {
+                modalCondition.style.display = "block";
+                document.body.classList.add('hidden-scoll');  // ẩn scroll body
+            }
+        });
+
+        // Lấy phần tử #condition-wrap
+        const conditionWrap = document.getElementById('condition-wrap');
+
+        // Lắng nghe sự kiện click trên từng phần tử .condition
+        conditions.forEach(condition => {
+            condition.addEventListener('click', () => {
+                // Lấy data-id từ phần tử .condition được click
+                const dataId = condition.getAttribute('data-id');
+
+                // Tìm thông tin từ conditionData dựa trên data-id
+                const selectedCondition = conditionData.find(item => item.id === parseInt(dataId));
+
+                if (selectedCondition) {
+                    // Tạo nội dung cho #condition-wrap
+                    const conditionHTML = `
+                        <div class="condition-header">
+                            <h2>Mã: <span>${selectedCondition.code}</span></h2>
+                        </div>
+                        <div class="condition-body">
+                            <div class="condition-group">
+                                <label>Hạn sử dụng mã</label>
+                                <p>${selectedCondition.expiry}</p>
+                            </div>
+                            <div class="condition-group">
+                                <label>Ưu đãi</label>
+                                <p>${selectedCondition.endow}</p>
+                            </div>
+                            <div class="condition-group">
+                                <label>Áp dụng cho sản phẩm</label>
+                                <p>${selectedCondition.apply}</p>
+                            </div>
+                            <div class="condition-group">
+                                <label>Thanh Toán</label>
+                                <p>${selectedCondition.pay}</p>
+                            </div>
+                            <div class="condition-group">
+                                <label>Đơn vị vận chuyển</label>
+                                <p>${selectedCondition.shipping}</p>
+                            </div>
+                            <button type="button" class="condition-okey">Đồng ý</button>
+                        </div>
+                    `;
+
+                    // Đặt nội dung vào #condition-wrap
+                    conditionWrap.innerHTML = conditionHTML;
+
+                    // Lắng nghe sự kiện click trên nút "Đồng ý"
+                    let okeyCondition = document.querySelector('.condition-okey');
+                    okeyCondition.addEventListener('click', () => {
+                        modalCondition.style.display = "none";
+                        document.body.classList.remove('hidden-scoll'); // Hiển thị lại scroll body
+                    });
+                }
+            });
+        });
+        // *** END Javacript mã giảm giá
+
+
+        // *** Javacript Đồng hồ đếm ngược flash sale
+        var hourElement = document.querySelector('.counter.hour');
+        var minuteElement = document.querySelector('.counter.minute');
+        var secondElement = document.querySelector('.counter.second');
+
+        function countdown() {
+            var hour = parseInt(hourElement.innerText);
+            var minute = parseInt(minuteElement.innerText);
+            var second = parseInt(secondElement.innerText);
+        
+            if (second > 0) {
+                second--;
+            } else {
+                if (minute > 0) {
+                    minute--;
+                    second = 59;
+                } else {
+                    if (hour > 0) {
+                        hour--;
+                        minute = 59;
+                        second = 59;
+                    } else {
+                        clearInterval(timer);
+                        return;
+                    };
+                };
+            };
+        
+            hourElement.innerText = hour.toString().padStart(2, '0');
+            minuteElement.innerText = minute.toString().padStart(2, '0');
+            secondElement.innerText = second.toString().padStart(2, '0');
+        }       
+        var timer = setInterval(countdown, 1000);
+        countdown();
+        // *** END Javacript Đồng hồ đếm ngược flash sale
+
+
+        // *** Javascript lấy dữ liệu và in ra từ file .json
+        const saleList = document.querySelector('.sale-list');
+
+        // Đường dẫn tới tệp JSON
+        const jsonFilePath = 'data.json';
+
+        // Sử dụng Fetch API để lấy dữ liệu từ tệp JSON
+        fetch(jsonFilePath)
+            .then((response) => response.json())
+            .then((data) => {
+                // Lấy 3 giá trị đầu tiên từ mảng data
+                const threeProducts = data.slice(0, 6);
+
+                // Duyệt qua dữ liệu JSON và tạo các mục sản phẩm
+                threeProducts.forEach((product) => {
+                    const saleItem = document.createElement('div');
+                    saleItem.classList.add('sale-item');
+
+                    saleItem.innerHTML = `
+                        <a href="#">
+                            <div class="sale-img">
+                                <img src="./assets/image/${product.image_product[0].image_1}">
+                                <div class="promotion">${product.reduce}</div>
+                            </div>
+                            <h3 class="sale-name current">${product.name_product}</h3>
+                        </a>
+                        <div class="sale-group row">
+                            <p class="sale-pn">${product.price_new}<sup>đ</sup></p>
+                            <p class="sale-po">${product.price_old}<sup>đ</sup></p>
+                        </div>
+                    `;
+
+                    saleList.appendChild(saleItem);
+                });
+            })
+            .catch((error) => {
+                console.error('Lỗi khi tải dữ liệu JSON: ' + error);
+            });
+        // END
+
+
+        // *** Javascript lấy dữ liệu và in ra từ file .json
+        const productList = document.querySelector('.product-list');
+
+        // Sử dụng Fetch API để lấy dữ liệu từ tệp JSON
+        fetch(jsonFilePath)
+            .then((response) => response.json())
+            .then((data) => {
+                // Lấy các giá trị còn lại từ mảng data
+                const allProducts = data.slice(6, 18);
+
+                // Duyệt qua dữ liệu JSON và tạo các mục sản phẩm
+                allProducts.forEach((product) => {
+                    const productItem = document.createElement('div');
+                    productItem.classList.add('product-item');
+
+                    productItem.innerHTML = `
+                        <a href="#">
+                            <div class="sale-img">
+                                <img src="./assets/image/${product.image_product[0].image_1}">
+                                <div class="promotion">${product.reduce}</div>
+                            </div>
+                            <h3 class="sale-name current">${product.name_product}</h3>
+                        </a>
+                        <div class="sale-group row">
+                            <p class="sale-pn">${product.price_new}<sup>đ</sup></p>
+                            <p class="sale-po">${product.price_old}<sup>đ</sup></p>
+                        </div>
+                    `;
+
+                    productList.appendChild(productItem);
+                });
+            })
+            .catch((error) => {
+                console.error('Lỗi khi tải dữ liệu JSON: ' + error);
+            });
+        // END Javascript lấy dữ liệu và in ra từ file .json
+
+
+        // *** Javascript quay lại đầu trang
+        var backToTopButton = document.getElementById("back-to-top");
+
+        // Thêm lắng nghe sự kiện cuộn trang
+        window.addEventListener("scroll", function() {
+            // Kiểm tra vị trí cuộn trang
+            if (document.documentElement.scrollTop > 500) {
+                // Hiển thị phần tử quay trở lại đầu trang
+                backToTopButton.style.display = "block";
+            } else {
+                // Ẩn phần tử quay trở lại đầu trang
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        // Thêm lắng nghe sự kiện click cho phần tử quay trở lại đầu trang
+        backToTopButton.addEventListener("click", function() {
+            // Cuộn trang về đầu
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Cuộn mượt
+            });
+        });
+        // *** END Javascript quay lại đầu trang
+    </script>
+</body>
+</html>
