@@ -554,6 +554,11 @@
         // Đường dẫn tới tệp JSON
         const jsonFilePath = 'data.json';
 
+        // Hàm để định dạng số tiền
+        function formatPrice(price) {
+            return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
         // Sử dụng Fetch API để lấy dữ liệu từ tệp JSON
         fetch(jsonFilePath)
             .then((response) => response.json())
@@ -575,8 +580,8 @@
                             <h3 class="sale-name current">${product.name_product}</h3>
                         </a>
                         <div class="sale-group row">
-                            <p class="sale-pn">${product.price_new}<sup>đ</sup></p>
-                            <p class="sale-po">${product.price_old}<sup>đ</sup></p>
+                            <p class="sale-pn">${formatPrice(Number(product.price_new))}<sup>đ</sup></p>
+                            <p class="sale-po">${formatPrice(Number(product.price_old))}<sup>đ</sup></p>
                         </div>
                     `;
 
@@ -613,8 +618,8 @@
                             <h3 class="sale-name current">${product.name_product}</h3>
                         </a>
                         <div class="sale-group row">
-                            <p class="sale-pn">${product.price_new}<sup>đ</sup></p>
-                            <p class="sale-po">${product.price_old}<sup>đ</sup></p>
+                            <p class="sale-pn">${formatPrice(Number(product.price_new))}<sup>đ</sup></p>
+                            <p class="sale-po">${formatPrice(Number(product.price_old))}<sup>đ</sup></p>
                         </div>
                     `;
 
